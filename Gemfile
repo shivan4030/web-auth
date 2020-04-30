@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'#shivan
 gem 'rails'
 
 # Use Puma as the app server
@@ -28,7 +28,10 @@ gem 'therubyracer'
 gem 'exception_notification'
 
 gem 'httpx'
+gem 'sqlite3'
 gem 'listen'
+gem 'dotenv-rails'
+gem 'yaml_db'
 group :development, :dev, :preprod, :production do
   #gem 'activerecord-oracle_enhanced-adapter'
   #gem 'ruby-oci8'#, '~> 2.2', '>= 2.2.2'
@@ -38,19 +41,19 @@ end
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-  gem 'listen'
-  gem 'dotenv-rails'
+  # gem 'sqlite3'
+  # gem 'listen'
+  # gem 'dotenv-rails'
 end
 
 group :development do
-  gem 'yaml_db'
+ 
 end
 
 # delayed job stuff
 # gem 'delayed_job_active_record'
 # gem 'activejob_dj_overrides' # gives us per-job overrides in active_job (like delayed_job)
- gem "delayed_job_web"
+gem 'delayed_job_web'
 gem 'sinatra' #, git: 'https://github.com/sinatra/sinatra.git', require: false
 
 # we don't need this gem in production environment, but we need to have the gem available for assets:precompile (env=production)
