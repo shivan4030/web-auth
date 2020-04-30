@@ -28,11 +28,12 @@ gem 'therubyracer'
 gem 'exception_notification'
 
 gem 'httpx'
-
+gem 'listen'
 group :development, :dev, :preprod, :production do
   #gem 'activerecord-oracle_enhanced-adapter'
   #gem 'ruby-oci8'#, '~> 2.2', '>= 2.2.2'
   #gem 'pg'
+  #gem 'listen'
 end
 
 group :development, :test do
