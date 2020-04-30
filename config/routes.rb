@@ -34,5 +34,5 @@ Rails.application.routes.draw do
   # TODO replaceappname - For test purposes - remove/update before using
   resources :users, only: [:index]
 
-  root 'things#index'
+  #root 'things#index'
 end
