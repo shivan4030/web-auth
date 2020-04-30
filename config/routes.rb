@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   end
 
   get '/healthcheck', to: 'application#healthcheck'
+  get '/', to: 'application#healthcheck'
 
   # OmniAuth login mappings
   get '/auth/:provider/callback', to: 'sessions#create', as: :signin
