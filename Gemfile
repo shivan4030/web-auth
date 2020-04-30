@@ -28,7 +28,7 @@ gem 'therubyracer'
 gem 'exception_notification'
 
 gem 'httpx'
-gem 'sqlite3'
+gem 'pg'
 gem 'listen'
 gem 'dotenv-rails'
 gem 'yaml_db'

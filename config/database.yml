@@ -8,17 +8,17 @@ sqlite: &sqlite
   pool: 5
   timeout: 5000
 
-# postgres: &postgres
-#   adapter: postgresql
-#   host: <%= ENV['DB_HOST'] %>
-#   port: <%= ENV['DB_PORT'].to_i %>
-#   database: <%= ENV['DB_DATABASE'] %>
-#   username: <%= ENV['DB_USERNAME'] %>
-#   password: <%= begin IO.read(ENV['DB_PASSWORD']).chomp rescue "" end %>
+postgres: &postgres
+  adapter: postgresql
+  host: ec2-34-195-169-25.compute-1.amazonaws.com
+  port: 5432
+  database: d5ed8a1igbbl4k
+  username: asyuxjbrftpxix
+  password: ffac1a876fcc6f7f92fbef3c9964f23c917f49ead52c9ce4f6116aeb50733fb5
 
 development:
-  <<: *sqlite
-  database: db/development.sqlite3
+  <<: *postgres
+  #database: db/development.sqlite3
 
 
 # # Warning: The database defined as "test" will be erased and
