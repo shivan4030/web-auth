@@ -9,7 +9,7 @@ threads threads_count, threads_count
 
 # Specifies the `port` that Puma will listen on to receive requests, default is 3000.
 #
-port=5000 
+port process.env.PORT { 5000 }
 
 # Specifies the `environment` that Puma will run in.
 #
